@@ -1,0 +1,22 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .main {
+    flex: 1;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .app-container.sidebar-expanded .main-bottom {
+    left: 280px;
+    width: calc(100% - 280px);
+  }
+  
+  .app-container.sidebar-collapsed .main-bottom {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  
